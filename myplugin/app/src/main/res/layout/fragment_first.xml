@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/btn_get_aidl"
+        android:text="获取AIDL"/>
+
+    <Button
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/btn_loaddemo1"
+        android:text="LoadDemo1 Class"/>
+
+    <Button
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/btn_loadfanyue"
+        android:text="LoadFanyue"/>
+
+    <Button
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/btn_loaddemo3"
+        android:text="LoadDemo3 Class"/>
+
+</LinearLayout>
