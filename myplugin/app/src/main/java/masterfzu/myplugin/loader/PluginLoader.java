@@ -17,7 +17,6 @@ import masterfzu.myplugin.utils.StringUtils;
 public class PluginLoader {
     PackageInfo mPackageInfo;
     Resources mPkgResources;
-    Context pluginContext;
 
     PluginLoader(Context ctx, PluginInfo info) {
         if (ctx == null || info == null)

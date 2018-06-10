@@ -2,6 +2,7 @@ package masterfzu.myplugin.loader;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageParser;
 
 import java.io.File;
@@ -22,6 +23,7 @@ public class PluginAppClient {
     @MethodParams({Context.class})
     public static RefMethod<Void> attach;
 
+    PackageInfo mInfo;
     PackageParser.Package p;
     Application app;
 
@@ -30,6 +32,7 @@ public class PluginAppClient {
             return;
 
         File apk = new File(info.getApkpath());
+        //getPackageArchiveInfo
         PackageParser pp = PackageParserCompat.createParser(apk);
         try {
             p = PackageParserCompat.parsePackage(pp, apk, 0);

@@ -33,7 +33,7 @@ public class PluginContextInjector {
         init = true;
         PluginContextInjector.pluginName = pluginName;
 
-        invokeCreatePluginActivityContext = new MethodInvoker(hostCl, MASTERFZU_MYPLUGIN_INVOKEBYPLUGIN_PLUGIN_INVOKED_SET, CREATE_PLUGIN_ACTIVITY_CONTEXT, new Class<?>[]{String.class});
+        invokeCreatePluginActivityContext = new MethodInvoker(hostCl, MASTERFZU_MYPLUGIN_INVOKEBYPLUGIN_PLUGIN_INVOKED_SET, CREATE_PLUGIN_ACTIVITY_CONTEXT, new Class<?>[]{String.class, String.class});
     }
 
     public static Context createPluginActivityContext(String activityName) {

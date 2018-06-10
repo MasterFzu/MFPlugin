@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".PluginActivity" />
+        <activity android:name=".PluginActivity" android:theme="@android:style/Theme.Holo.Dialog"/>
 
     </application>
 
